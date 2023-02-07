@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jubayer's portfolio</title>
+     <link rel="stylesheet" type="text/css" href=" ../static/style.css"/>
+</head>
+<body>
+  <nav>
+    <h1>PORT<span style="color:rgb(4, 100, 4);">folio</span></h1>
+    <input id="btn1" type="checkbox"/>
+    <label for="btn1" class="hamburg"></label>
+    <ul>
+       <li> <a class="active" href="/">HOME</a></li>
+       <li> <a class="active" href="about.html">ABOUT ME</a> </li> 
+       <li> <a class="active" href="skills.html">SKILLS</a> </li>
+       <li> <a class="active" href="contact.html">CONTACT</a> </li>
+    </ul>   
+  </nav>
+    {% block content %}{% endblock content %} 
+</body>
+</html>

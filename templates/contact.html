@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+   <div class="form-c">
+        <p id="head3">CONTACT ME</p> 
+         <form action="contact.html" method="POST">
+            {% csrf_token %}
+            <div class="form-part">
+               <label for="name" class="form-l">Name</label></br>
+               <input type="text" class="form-n" name="name" placeholder="Enter Your Name">
+            </div>
+           <div class="form-part">
+            <label for="email" class="form-l">Email</label></br>
+            <input type="email" class="form-n" name="email" placeholder="Enter Your Email">
+           </div>
+           <div class="form-part">
+            <label for="desc" class="form-l">Description</label></br>
+            <textarea class="form-n" id="desc"  rows="10" name="desc" placeholder="Write what you want"></textarea>
+          </div>
+          <button type="submit" class="form-n" id="btn-submit">SEND</button>
+         </form>
+   </div>
+{% endblock content %}
